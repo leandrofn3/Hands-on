@@ -23,8 +23,7 @@
     --border: #ebe6e7;
 }
 
-/* header {
-    border: 1px solid red;
+header {
     width: 100%;
     height: 100%;
 }
@@ -80,8 +79,8 @@ nav {
     color: var(--color-button-houver);
 }
 
-.containerHeader{
-    background-color: aquamarine;
+.containerHeader {
+    background-color: var(--bg-color-primary);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -91,8 +90,7 @@ nav {
 }
 
 .textHeader {
-    border: 1px solid #101828;
-    height: 350px;
+    height: 420px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -107,12 +105,172 @@ nav {
 
 .textHeader p {
     font-family: sans-serif;
-    font-size: 20px;
-    letter-spacing: 0.3px;
+    font-size: 19px;
+    letter-spacing: 0.10px;
+    line-height: 30px;
+    color: var(--text-color-primary);
+}
 
-} */
+.btn-first {
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
 
-.containerGeneral {
+.btn-first-styled {
+    background-color: var(--color-button-primary);
+    color: var(--text-color-tertiary);
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.btn-first-styled:hover {
+    background-color: var(--color-button-houver);
+    transform: translateY(-3px);
+}
+
+.retangulo {
+    border-radius: 10px;
+    width: 100%;
+    height: 320px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color-secondary);
+    box-shadow: 0 8px 6px -6px lightgray;
+}
+
+.retangulo svg {
+    width: 60%;
+    color: var(--bg-color-tertiary);
+
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.section-01 {
+    border: 1px solid rebeccapurple;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-01 h2 {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-top: 20px;
+}
+
+.section-01 p{
+    text-align: center;
+    font-size: 19px;
+    font-family: sans-serif;
+    font-weight: 300;
+    color: var(--text-color-primary);
+    margin-bottom: 35px;
+
+}
+
+.containerCards {
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--bg-color-primary);
+    width: 100%;
+    height: 370px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.card svg {
+    width: 70%;
+    height: 70%;
+    color: var(--text-color-tertiary);
+}
+
+.logo-card {
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-button-primary);
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.card p {
+    color: var(--text-color-primary);
+    font-size: 15px;
+    font-family: sans-serif;
+    width: 270px;
+    text-align: start;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+    margin-bottom: 0;
+}
+
+.card li {
+    color: var(--text-color-primary);
+    letter-spacing: 1.5px;
+    margin-left: 20px;
+    line-height: 30px;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+.card li::marker {
+    color: var(--color-button-primary);
+}
+
+.card:hover {
+    box-shadow: -0.1px 5px 8px -1px gray;
+    transform: translateY(-1px);
+}
+
+.card-segundary .logo-card {
+    background-color: var(--color-button-secondary);
+}
+
+.card-segundary ul li::marker {
+    color: var(--color-button-secondary);
+}
+
+.card-tertiary .logo-card {
+    background-color: var(--color-button-tertiary);
+}
+
+.card-tertiary ul li::marker {
+    color: var(--color-button-tertiary);
+}
+
+
+/* .containerGeneral {
     max-width: 100%;
     min-height: 90vh;
     background-color: var(--bg-color-primary);
@@ -276,7 +434,7 @@ p {
 
 .card li {
     margin-bottom: 10px;
-     color: var(--text-color-primary);
+    color: var(--text-color-primary);
     letter-spacing: 0.5px;
 }
 
@@ -588,4 +746,4 @@ footer a {
 
 footer a:hover{
     color: #FFF;
-}
+} */
